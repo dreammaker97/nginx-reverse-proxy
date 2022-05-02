@@ -4,7 +4,7 @@ services:
   nginx:
     image: nginx:alpine
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./config/nginx.conf:/etc/nginx/nginx.conf
       - ./src/data:/usr/share/nginx/data
       - ./src/your-domain.etc/www:/usr/share/nginx/your-domain.etc/www
     ports:
